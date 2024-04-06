@@ -1,0 +1,38 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Prettier configuration files
+.prettierrc
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore npm lock file
+package-lock.json
+
+# Ignore yarn lock file
+yarn.lock
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.iml
+
+# Ignore OS generated files
+Thumbs.db
+.DS_Store?
+ehthumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore build directories
+/build/
+/dist/
+
+# Ignore dependency directories
+/bower_components/
+/vendor/
