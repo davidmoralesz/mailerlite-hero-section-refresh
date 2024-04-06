@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  .button {
+    @apply rounded border px-4 py-3 text-xl transition duration-300 ease-linear;
+  }
+
+  .button--primary {
+    @apply border-black bg-black text-white hover:bg-mailer-green-800 focus:bg-mailer-green-800 active:bg-mailer-green-800;
+  }
+
+  .button--secondary {
+    @apply rounded border-black bg-transparent text-black hover:bg-mailer-green-800 hover:text-white focus:bg-mailer-green-800 focus:text-white active:bg-mailer-green-800 active:text-white;
+  }
+
+  .brand-bubble {
+    @apply relative mr-auto rounded bg-mailer-green-400 px-5 py-4;
+  }
+
+  .brand-bubble::after {
+    --tail-size: 1.25rem;
+
+    aspect-ratio: 4 / 3;
+    content: "";
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    height: var(--tail-size);
+    bottom: calc(var(--tail-size) * -0.6);
+
+    @apply absolute left-0 bg-mailer-green-400;
+  }
+
+  .brand-bubble--black::after {
+    bottom: calc(var(--tail-size) * -1);
+
+    @apply bg-black;
+  }
+
+  @media (min-width: 1300px) {
+    .brand-bubble::after {
+      --tail-size: 2rem;
+    }
+  }
+
+  .call-to-action {
+    @apply rounded-lg border border-mailer-green-100/70 bg-mailer-green-100/60 p-5 backdrop-blur-sm transition duration-500 ease-linear hover:scale-95 hover:drop-shadow-mailer-green focus:scale-95 focus:drop-shadow-mailer-green active:scale-95 active:drop-shadow-mailer-green lg:p-10;
+  }
+
+  .card {
+    @apply mx-auto flex flex-1 cursor-pointer flex-col gap-3 transition duration-500 ease-linear hover:-translate-y-1 hover:drop-shadow-mailer-green focus:-translate-y-1 focus:drop-shadow-mailer-green active:-translate-y-1 active:drop-shadow-mailer-green lg:flex-grow-0 lg:basis-[49%] lg:flex-wrap xl:flex-1;
+  }
+
+  .has-dark-overlay::before {
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+    border-radius: 1.25rem 1.25rem 1.25rem 0;
+    content: "";
+
+    @apply absolute inset-0;
+  }
+}
