@@ -14,7 +14,7 @@ It was created using vanilla HTML5 and CSS3 with the assistance of TailwindCSS. 
 
 ### Code Abstractions:
 
-The code has been streamlined for simplicity and ease of maintenance by abstracting it directly into the CSS file. You can conveniently access these abstractions at `/src/input.css`, ensuring a seamless workflow without reliance on JavaScript frameworks.
+To simplify maintenance and streamline the workflow, certain repetitive elements of the code, such as buttons and cards, have been encapsulated into custom classes using Tailwind's `@apply` directive. This abstraction is implemented directly at the CSS level and can be conveniently accessed at `/src/input.css`. By doing so, we ensure a cleaner workflow without reliance on JavaScript frameworks.
 
 ### Accessibility Considerations:
 
