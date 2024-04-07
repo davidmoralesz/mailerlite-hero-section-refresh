@@ -25,3 +25,24 @@ Special attention has been paid to addressing the current liabilities under the 
 Explore the redesigned Hero Section in our Figma File for a comprehensive overview and visual representation. _Please take a moment to review the comments within the file._
 
 [Review Figma File](https://www.figma.com/file/7RgKokCTpdrtrtVwebfa1E/MailerLite---Redesign-of-Hero-Section?type=design&node-id=0%3A1&mode=design&t=pARgAYFfjtNxQ3DR-1)
+
+---
+
+## Getting Started:
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites:
+Make sure you have Node.js installed on your machine.
+
+### Installation:
+1. Clone the repository
+> `git clone https://github.com/your_username/your_project.git`
+
+2. Install NPM packages
+> `npm install`
+
+3. Run the development server
+> `npm run dev`
+
+4. Initiate a [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to view the Hero Section.
+> For example, `http://localhost:5500/public/index.html` using the Live Server extension.
